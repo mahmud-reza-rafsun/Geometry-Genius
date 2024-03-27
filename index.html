@@ -20,12 +20,12 @@
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Triangle</h2>
                 <p class="py-2">Area (A) = 0.5 X b X h</p>
-                <input class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="b">
+                <input id="triangle-base" class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="b">
                 <span>cm</span>
-                <input class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="h">
+                <input id="triangle-height" class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="h">
                 <span>cm</span>
                 <div class="text-center block">
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -99,5 +99,9 @@
             </div>
         </div>
     </main>
+
+    <!-- script link -->
+
+    <script src="script/triangle-calculation.js"></script>
 </body>
 </html>
