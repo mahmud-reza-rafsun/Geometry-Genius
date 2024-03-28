@@ -21,10 +21,10 @@
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Triangle</h2>
                 <p class="py-2">Area (A) = 0.5 X b X h</p>
-                <p class="pb-2 text-center">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
-                <input id="triangle-base" class="w-20 text-1xl rounded-sm pl-2 mt-1" type="text" placeholder="b">
+                <p class="pb-2 text-center">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                <input id="triangle-base" class="w-20 text-1xl rounded-sm pl-2 mt-1" type="text" placeholder="Base">
                 <span>cm</span>
-                <input id="triangle-height" class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="h">
+                <input id="triangle-height" class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="Height">
                 <span>cm</span>
                 <div class="text-center block">
                     <button onclick="calculateTriangleArea()" class="btn btn-accent w-full">Calculate</button>
@@ -38,9 +38,10 @@
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Rectangle</h2>
                 <p class="py-2">Area (A) = w X I</p>
-                <input id="rectangle-width" class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="b">
+                <p class="pb-1 text-center">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                <input id="rectangle-width" class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="Width">
                 <span>cm</span>
-                <input class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="h">
+                <input id="rectangle-length" class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="Length">
                 <span>cm</span>
                 <div class="text-center block">
                     <button onclick="calculateRectangleArea()" class="btn btn-accent w-full">Calculate</button>
@@ -49,13 +50,17 @@
             </div>
             <!-- Parallelogram card -->
             <div class="card w-80 bg-base-100 shadow-xl rounded-sm">
-                <figure><img src="images/parallelogram.png" alt="Shoes" / class="w-48 mt-6"></figure>
+                <figure><img src="images/parallelogram.png" alt="Shoes" / class="w-48 mt-12"></figure>
                 <div class="card-body text-center block">
-                <h2 class="card-title text-center block mt-6">Parallelogram</h2>
+                <h2 class="card-title text-center block mt-1">Parallelogram</h2>
                 <p class="py-1">Area (A) = b X h</p>
-                <h4 class="text-lg">b=10cm, h=12cm</h4>
+                <p class="mb-3 text-center">Area: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
+                <input id="parallelogram-base" class="w-20 text-1xl rounded-sm pl-2 mt-1" type="text" placeholder="Base">
+                <span>cm</span>
+                <input id="parallelogram-height" class="w-20 text-1xl rounded-sm pl-2" type="text" placeholder="Height">
+                <span>cm</span>
                 <div class="text-center block">
-                    <button class="btn btn-accent w-full mt-9">Calculate</button>
+                    <button onclick="calculateParallelogramArea()" class="btn btn-accent w-full mt-6">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -97,7 +102,7 @@
             </div>
             </div>
             <div class="w-80 h-80 border-2 border-gray-300 rounded-md">
-                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+                <h3 class="text-3xl text-center p-4 border-b-2">Area Calculation</h3>
             </div>
         </div>
     </main>
@@ -105,5 +110,6 @@
     <!-- script link -->
     <script src="script/triangle-calculation.js"></script>
     <script src="script/rectangle-calculation.js"></script>
+    <script src="script/parallelogram-calculate.js"></script>
 </body>
 </html>
