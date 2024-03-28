@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <link rel="shortcut icon" href="images/Geometry Genius.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -20,12 +21,13 @@
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Triangle</h2>
                 <p class="py-2">Area (A) = 0.5 X b X h</p>
-                <input id="triangle-base" class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="b">
+                <p class="pb-2 text-center">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                <input id="triangle-base" class="w-20 text-1xl rounded-sm pl-2 mt-1" type="text" placeholder="b">
                 <span>cm</span>
                 <input id="triangle-height" class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="h">
                 <span>cm</span>
                 <div class="text-center block">
-                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                    <button onclick="calculateTriangleArea()" class="btn btn-accent w-full">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -36,12 +38,12 @@
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Rectangle</h2>
                 <p class="py-2">Area (A) = w X I</p>
-                <input class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="b">
+                <input id="rectangle-width" class="w-20 text-1xl rounded-sm pl-2 mt-2" type="text" placeholder="b">
                 <span>cm</span>
                 <input class="w-20 text-1xl rounded-sm pl-2 mb-6" type="text" placeholder="h">
                 <span>cm</span>
                 <div class="text-center block">
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button onclick="calculateRectangleArea()" class="btn btn-accent w-full">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -53,7 +55,7 @@
                 <p class="py-1">Area (A) = b X h</p>
                 <h4 class="text-lg">b=10cm, h=12cm</h4>
                 <div class="text-center block">
-                    <button class="btn btn-primary w-full mt-9">Calculate</button>
+                    <button class="btn btn-accent w-full mt-9">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -65,7 +67,7 @@
                 <p class="py-2">Area (A) 0.5 X p X b<sub>1</sub> X d<sub>2</sub></p>
                 <h4 class="text-lg">d<sub>1</sub> = 16cm d<sub>2</sub> 8cm</h4>
                 <div class="text-center block">
-                    <button class="btn btn-primary w-full mt-12">Calculate</button>
+                    <button class="btn btn-accent w-full mt-12">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -77,7 +79,7 @@
                 <p class="py-2">Area (A) = 0.5 X p X b</p>
                 <h4 class="text-lg">p = 6cm, b = 10cm</h4>
                 <div class="text-center block">
-                    <button class="btn btn-primary w-full mt-12">Calculate</button>
+                    <button class="btn btn-accent w-full mt-12">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -89,7 +91,7 @@
                 <p class="py-2">Area (A) = ab</p>
                 <h4 class="text-lg">a = 10cm, b = 4cm</h4>
                 <div class="text-center block">
-                    <button class="btn btn-primary w-full mt-12">Calculate</button>
+                    <button class="btn btn-accent w-full mt-12">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -101,7 +103,7 @@
     </main>
 
     <!-- script link -->
-
     <script src="script/triangle-calculation.js"></script>
+    <script src="script/rectangle-calculation.js"></script>
 </body>
 </html>

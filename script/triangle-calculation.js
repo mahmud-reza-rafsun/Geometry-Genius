@@ -11,6 +11,7 @@
 
 function calculateTriangleArea(){
     // get triangle base value 
+    
     const triangleBaseInput = document.getElementById('triangle-base');
     const triangleBaseText = triangleBaseInput.value;
     const base = parseFloat(triangleBaseText);
@@ -22,4 +23,13 @@ function calculateTriangleArea(){
     const triangleHeightValue = triangleHeightInput.value;
     const height = parseFloat(triangleHeightValue);
     console.log(height);
+
+    // calculate triangle area
+    const area = 0.5 * base * height;
+    console.log('area of the triangle is: ', area);
+
+    // display triangle-area
+
+    const triangleAreaSpan = document.getElementById('triangle-area');
+    triangleAreaSpan.innerText = area;
 }
