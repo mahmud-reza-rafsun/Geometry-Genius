@@ -82,9 +82,13 @@
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Pentagon</h2>
                 <p class="py-2">Area (A) = 0.5 X p X b</p>
-                <h4 class="text-lg">p = 6cm, b = 10cm</h4>
+                <p class="text-center">Area: <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span></p>
+                <input id="pentagon-perimeter" class="w-20 text-1xl rounded-sm pl-2 mt-1" type="text" placeholder="Perimeter">
+                <span>cm</span>
+                <input id="pentagon-base" class="w-20 text-1xl rounded-sm pl-2" type="text" placeholder="Base">
+                <span>cm</span>
                 <div class="text-center block">
-                    <button class="btn btn-accent w-full mt-12">Calculate</button>
+                    <button onclick="pentagonCalclationArea()" class="btn btn-accent w-full mt-6">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -111,5 +115,6 @@
     <script src="script/triangle-calculation.js"></script>
     <script src="script/rectangle-calculation.js"></script>
     <script src="script/parallelogram-area.js"></script>
+    <script src="script/pentagon-calculation.js"></script>
 </body>
 </html>
