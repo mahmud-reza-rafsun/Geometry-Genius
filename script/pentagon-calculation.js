@@ -1,17 +1,26 @@
-function pentagonCalclationArea(){
-    const pentagonPerimeterInput = document.getElementById('pentagon-perimeter');
-    const perimeterText = pentagonPerimeterInput.value;
-    const perimeter = parseFloat(perimeterText);
-    console.log(perimeter);
+function pentagonAreaCalculation(){
+    const perimeter = getElementByValue('pentagon-perimeter');
+    console.log(perimeter)
 
-    const pentagonBaseInput = document.getElementById('pentagon-base');
-    const BaseInput = pentagonBaseInput.value;
-    const base = parseFloat(BaseInput);
-    console.log(base);
+    const base = getElementByValue('pentagon-base')
+    console.log(base)
 
-    const pentagonCalclation = 0.5 * perimeter * base;
-    console.log(pentagonCalclation);
+    const area = 0.5 * perimeter * base;
 
-    const pentagonArea = document.getElementById('pentagon-area');
-    pentagonArea.innerText = pentagonCalclation;
+    setElementValue('pentagon-area', area);
+}
+
+
+
+
+function getElementByValue(getMainValue){
+    const firstInput = document.getElementById(getMainValue);
+    const firstInputText = firstInput.value;
+    const first = parseFloat(firstInputText);
+    return first;
+}
+
+function setElementValue(elementId, area){
+    const setSpanValue = document.getElementById(elementId)
+    setSpanValue.innerText = area
 }
