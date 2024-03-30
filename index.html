@@ -71,9 +71,9 @@
                 <h2 class="card-title text-center block">Rhombus</h2>
                 <p class="py-2">Area (A) 0.5 X p X b<sub>1</sub> X d<sub>2</sub></p>
                 <p class="pb-1 text-center">Area: <span id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
-                <input id="rhombus-diagonal-1" class="w-20 text-1xl rounded-sm mt-1" type="text" placeholder="Diagonal-1">
+                <input id="rhombus-diagonal-1" class="w-20 text-1xl rounded-sm mt-1 pl-2" type="text" placeholder="Base">
                 <span>cm</span>
-                <input id="rhombus-diagonal-2" class="w-20 text-1xl rounded-sm" type="text" placeholder="Diagonal-2">
+                <input id="rhombus-diagonal-2" class="w-20 text-1xl rounded-sm pl-2" type="text" placeholder="Diagonal">
                 <span>cm</span>
                 <div class="text-center block">
                     <button onclick="rhombusAreaCalculate()" class="btn btn-accent w-full mt-5">Calculate</button>
@@ -101,10 +101,14 @@
                 <figure><img src="images/ellipse.png" alt="Shoes" / class="w-48 mt-16"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Ellipse</h2>
-                <p class="py-2">Area (A) = ab</p>
-                <h4 class="text-lg">a = 10cm, b = 4cm</h4>
+                <p class="py-2">Area (A) = π X a X b</p>
+                <p class="pb-1 text-center">Area: <span id="ellipse-area-span">0</span> <span>cm<sup>2</sup></span></p>
+                <input id="ellipse-area" class="w-20 text-1xl rounded-sm pl-2 mt-1" type="text" placeholder="Area">
+                <span>cm</span>
+                <input id="ellipse-base" class="w-20 text-1xl rounded-sm pl-2" type="text" placeholder="Base">
+                <span>cm</span>
                 <div class="text-center block">
-                    <button class="btn btn-accent w-full mt-12">Calculate</button>
+                    <button onclick="calculationEllipsArea()" class="btn btn-accent w-full mt-5">Calculate</button>
                 </div>
                 </div>
             </div>
@@ -121,5 +125,6 @@
     <script src="script/parallelogram-area.js"></script>
     <script src="script/pentagon-calculation.js"></script>
     <script src="script/rhombus-calculation.js"></script>
+    <script src="script/ellipse-calculation.js"></script>
 </body>
 </html>

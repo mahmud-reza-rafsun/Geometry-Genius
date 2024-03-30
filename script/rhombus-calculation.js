@@ -3,7 +3,7 @@ function rhombusAreaCalculate(){
     const rhombusDiagonalTow = getRhombusInput('rhombus-diagonal-2');
     // console.log(rhombusDiagonalOne, rhombusDiagonalTow);
 
-    const area = 0.5 * rhombusDiagonalOne * 1 * rhombusDiagonalTow * 2;
+    const area = 0.5 * 4 * rhombusDiagonalOne * 1 * rhombusDiagonalTow * 2;
     setSpanValue('rhombus-area', area);
 }
 
