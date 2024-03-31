@@ -10,7 +10,7 @@
     <style>
         input{
             border: 1px solid rgb(3, 184, 255);
-            border-radius: 2px;
+            border-radius: 1px;
         }
         input:focus{
             outline: 1px solid rgb(3, 184, 255);
@@ -40,11 +40,11 @@
             </div>
           </div>
     </header>
-    <main>
+    <main class="text-center">
         <div class="flex flex-col md:flex-row">
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-9">
             <!-- Triangle card -->
-            <div class="card w-80 bg-base-100 border-1">
+            <div class="card sm:w-100 lg:w-uto bg-base-100 border-1">
                 <figure><img src="images/triangle.png" alt="Shoes" / class="w-48"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Triangle</h2>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- Rectangle card -->
-            <div class="card w-80 bg-base-100 border-1">
+            <div class="card sm:w-100 lg:w-auto bg-base-100 border-1">
                 <figure><img src="images/rectangle.png" alt="Shoes" / class="w-48 mt-8"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Rectangle</h2>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <!-- Parallelogram card -->
-            <div class="card w-80 bg-base-100 border-1">
+            <div class="card sm:w-100 lg:w-auto bg-base-100 border-1">
                 <figure><img src="images/parallelogram.png" alt="Shoes" / class="w-48 mt-12"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block mt-1">Parallelogram</h2>
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <!-- Rhombus card -->
-            <div class="card w-80 bg-base-100 border-1 mt-3">
+            <div class="card sm:w-100 lg:w-auto bg-base-100 border-1">
                 <figure><img src="images/rhombus.png" alt="Shoes" / class="w-48 mt-10"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Rhombus</h2>
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <!-- Pentagon card -->
-            <div class="card w-80 bg-base-100 border-1 mt-3">
+            <div class="card sm:w-100 lg:w-auto bg-base-100 border-1">
                 <figure><img src="images/pentagon.png" alt="Shoes" / class="w-48"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Pentagon</h2>
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <!-- Ellipse card -->
-            <div class="card w-80 bg-base-100 border-1 mt-3">
+            <div class="card sm:w-100 lg:w-auto bg-base-100 border-1">
                 <figure><img src="images/ellipse.png" alt="Shoes" / class="w-48 mt-16"></figure>
                 <div class="card-body text-center block">
                 <h2 class="card-title text-center block">Ellipse</h2>
@@ -139,9 +139,6 @@
                 </div>
                 </div>
             </div>
-            </div>
-            <div class="w-80 h-80 border-1 rounded-md">
-                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
             </div>
         </div>
     </main>
